@@ -1,7 +1,8 @@
 package calculator;
 
 /**
- * 
+ * This class represents a numerical sample with a sample size, sample mean, sample standard deviation
+ * @author Noah Lago ndl3389@rit.edu
  */
 public class NumSample {
     /**
@@ -13,14 +14,14 @@ public class NumSample {
      * Represents the mean of this specific sample, not of the overall population
      * Common notation for sample mean is "x̄"
      */
-    private int x;
+    private double x;
     /**
      * Represents the standard deviation of this specific sample, not of the overall population
      * Common notation for sample standard deviation is "s"
      */
-    private int s;
+    private double s;
 
-    public NumSample(int n, int x, int s){
+    public NumSample(int n, double x, double s){
         this.n = n;
         this.x = x;
         this.s = s;
@@ -30,11 +31,11 @@ public class NumSample {
         return n;
     }
 
-    public int getS() {
+    public double getS() {
         return s;
     }
 
-    public int getX() {
+    public double getX() {
         return x;
     }
 }
