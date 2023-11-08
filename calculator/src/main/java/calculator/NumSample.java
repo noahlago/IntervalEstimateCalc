@@ -27,6 +27,12 @@ public class NumSample {
         this.s = s;
     }
 
+    public NumSample(double[] x_vals){
+        this.n = x_vals.length;
+        this.x = SampleUtils.meanFromVals(x_vals);
+        this.s = SampleUtils.sFromMean(x_vals, n);
+    }
+
     public int getN() {
         return n;
     }
