@@ -1,6 +1,8 @@
-package calculator;
+package calculator.Distributions;
 
-public class LinearDistribution implements Distribution{
+import calculator.Distribution;
+
+public class BernoulliDistribution implements Distribution{
 
     @Override
     public double popDev() {

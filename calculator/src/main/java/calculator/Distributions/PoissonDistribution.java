@@ -1,4 +1,6 @@
-package calculator;
+package calculator.Distributions;
+
+import calculator.Distribution;
 
 public class PoissonDistribution implements Distribution{
 
