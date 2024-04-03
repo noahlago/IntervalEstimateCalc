@@ -7,17 +7,30 @@ public abstract class Distribution {
     private double sampleMean;
     private int n;
 
-    //Calculate population standard deviation
-    public abstract double popDev();
+    //Return population standard deviation
+    public double getPopDev(){
+        return this.popDev;
+    }
 
-    //Calculate population mean/true mean
-    public abstract double popMean();
+    //Return population mean/true mean
+    public double getPopMean(){
+        return this.popMean;
+    }
 
-    //Calculate sample standard deviation
-    public abstract double sampleDev();
+    //Return sample standard deviation
+    public double getSampleDev(){
+        return this.sampleDev;
+    }
 
-    //Calculate sample mean
-    public abstract double sampleMean();
+    //Return sample mean
+    public double getSampleMean(){
+        return this.sampleMean;
+    }
+
+    //Return this sample's size
+    public int getN(){
+        return this.n;
+    }
 
     //Set sample size (N)
     public void setN(int n){
@@ -43,5 +56,11 @@ public abstract class Distribution {
     public void setPopMean(double mean){
         this.popMean = mean;
     }
+
+    //Uses the inputted values for the sample to calculate the population mean
+    public abstract boolean calcPopMean();
+
+    //Uses the inputted values for the sample to calculate the population standard deviation
+    public abstract boolean calcPopDev();
 
 }
