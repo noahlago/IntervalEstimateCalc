@@ -2,60 +2,19 @@ package calculator.Distributions;
 
 import calculator.Distribution;
 
-public class GeometricDistribution implements Distribution{
+public class GeometricDistribution extends Distribution{
 
     @Override
-    public double popDev() {
+    public boolean calcPopMean() {
         // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'popDev'");
+        throw new UnsupportedOperationException("Unimplemented method 'calcPopMean'");
     }
 
     @Override
-    public double popMean() {
+    public boolean calcPopDev() {
         // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'popMean'");
+        throw new UnsupportedOperationException("Unimplemented method 'calcPopDev'");
     }
 
-    @Override
-    public double sampleDev() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'sampleDev'");
-    }
-
-    @Override
-    public double sampleMean() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'sampleMean'");
-    }
-
-    @Override
-    public void setN(int n) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'setN'");
-    }
-
-    @Override
-    public void setSampleDev(double dev) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'setSampleDev'");
-    }
-
-    @Override
-    public void setSampleMean(double mean) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'setSampleMean'");
-    }
-
-    @Override
-    public void setPopDev(double dev) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'setPopDev'");
-    }
-
-    @Override
-    public void setPopMean(double mean) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'setPopMean'");
-    }
     
 }
