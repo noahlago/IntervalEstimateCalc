@@ -52,4 +52,29 @@ public class SampleUtils {
         //Calculates and returns sample standard deviation
         return Math.sqrt((sumXSq - (sumX * sumX / n)) / (n-1)); 
     }
+
+        /**
+     * Calculates the standard deviation of a numerical sample
+     * @param xVals contains all of the values for each item in the sample
+     * @param n the size of the sample
+     * @return statistical formula for calculating sample standard deviation
+     */
+    public static double sFromMean(double[] xVals){
+        int n = xVals.length;
+
+        //Calculates the sum of all X values
+        double sumX = 0;
+        for(double x : xVals){
+            sumX += x;
+        }
+
+        //Calculates the sum of all X values squared
+        double sumXSq = 0;
+        for(double x : xVals){
+            sumXSq += (x * x);
+        }
+
+        //Calculates and returns sample standard deviation
+        return Math.sqrt((sumXSq - (sumX * sumX / n)) / (n-1)); 
+    }
 }
