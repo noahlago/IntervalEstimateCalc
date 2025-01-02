@@ -2,7 +2,7 @@ package calculator.IdentifyDistributions;
 
 import calculator.SampleUtils;
 
-public class Identifier {
+public class BasicIdentifier {
 
     private static double calcSkewness(double[] data, double mean, double stdDev){
         double cubedDiffSum = 0.0;
