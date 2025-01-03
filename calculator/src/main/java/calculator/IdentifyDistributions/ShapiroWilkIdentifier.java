@@ -1,9 +1,10 @@
 package calculator.IdentifyDistributions;
 import org.apache.commons.math3.stat.descriptive.DescriptiveStatistics;
 
-public class ShapiroWilkIdentifier {
 
-    public static boolean checkNormality(double[] data){
+public class ShapiroWilkIdentifier implements ComplexIdentifier {
+
+    public boolean checkNormality(double[] data){
         DescriptiveStatistics dsStats = new DescriptiveStatistics();
         
         for (double d : data) {
